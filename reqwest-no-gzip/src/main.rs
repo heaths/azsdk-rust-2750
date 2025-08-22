@@ -4,11 +4,12 @@
 use azure_core::http::{ClientOptions, TransportOptions};
 use azure_identity::AzureDeveloperCliCredential;
 use azure_security_keyvault_secrets::{SecretClient, SecretClientOptions};
+use setup::setup;
 use std::{env, sync::Arc};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    dotazure::load()?;
+    setup()?;
 
     let client = reqwest::ClientBuilder::new()
         .gzip(false)

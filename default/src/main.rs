@@ -5,10 +5,11 @@ use std::env;
 
 use azure_identity::AzureDeveloperCliCredential;
 use azure_security_keyvault_secrets::SecretClient;
+use setup::setup;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    dotazure::load()?;
+    setup()?;
 
     let credential = AzureDeveloperCliCredential::new(None)?;
     let client = SecretClient::new(&env::var("AZURE_KEYVAULT_URL")?, credential, None)?;

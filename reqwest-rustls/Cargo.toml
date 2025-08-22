@@ -10,10 +10,10 @@ azure_core = { version = "0.28.0", default-features = false, features = [
 ] }
 azure_identity = { version = "0.28.0", default-features = false }
 azure_security_keyvault_secrets = { version = "0.7.0", default-features = false }
-dotazure = "0.2.0"
 reqwest = { version = "0.12.23", default-features = false, features = [
     "rustls-tls-native-roots",
 ] }
+setup.path = "../setup"
 tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
 
 [patch.crates-io]
