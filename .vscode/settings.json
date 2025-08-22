@@ -2,6 +2,11 @@
   "rust-analyzer.cargo.features": "all",
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.checkOnSave": true,
+  "rust-analyzer.linkedProjects": [
+    "default/Cargo.toml",
+    "reqwest-no-gzip/Cargo.toml",
+    "reqwest-rustls/Cargo.toml",
+  ],
   "[rust]": {
     "editor.formatOnSave": true
   },
