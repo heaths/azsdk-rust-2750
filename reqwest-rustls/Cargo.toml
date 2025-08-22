@@ -1,0 +1,26 @@
+[package]
+name = "reqwest-rustls"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+azure_core = { version = "0.28.0", default-features = false, features = [
+    "reqwest",
+] }
+azure_identity = { version = "0.28.0", default-features = false }
+azure_security_keyvault_secrets = { version = "0.7.0", default-features = false }
+dotazure = "0.2.0"
+reqwest = { version = "0.12.23", default-features = false, features = [
+    "rustls-tls-native-roots",
+] }
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
+
+[patch.crates-io]
+azure_core = { version = "0.28.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
+azure_core_macros = { version = "0.2.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
+azure_identity = { version = "0.28.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
+azure_security_keyvault_secrets = { version = "0.7.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
+typespec = { version = "0.8.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
+typespec_client_core = { version = "0.7.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
+typespec_macros = { version = "0.7.0", git = "https://github.com/heaths/azure-sdk-for-rust", branch = "issue2750" }
