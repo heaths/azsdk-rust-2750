@@ -2,10 +2,14 @@
 name = "setup"
 version = "0.1.0"
 edition = "2024"
+publish = false
 
 [dependencies]
 clap = { version = "4.5.45", features = ["derive"] }
 dotazure = "0.2.0"
 time = { version = "0.3.41", features = ["macros"] }
 tracing = "0.1.41"
-tracing-subscriber = { version = "0.3.19", features = ["env-filter", "local-time"] }
+tracing-subscriber = { version = "0.3.19", features = [
+    "env-filter",
+    "local-time",
+] }

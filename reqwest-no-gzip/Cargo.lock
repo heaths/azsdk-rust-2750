@@ -77,19 +77,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "async-compression"
-version = "0.4.27"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ddb939d66e4ae03cee6091612804ba446b12878410cfa17f785f4dd67d4014e8"
-dependencies = [
- "flate2",
- "futures-core",
- "memchr",
- "pin-project-lite",
- "tokio",
-]
-
-[[package]]
 name = "async-lock"
 version = "3.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -120,7 +107,7 @@ checksum = "1505bd5d3d116872e7271a6d4e16d81d0c8570876c8de68093a09ac269d8aac0"
 [[package]]
 name = "azure_core"
 version = "0.28.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "async-lock",
  "async-trait",
@@ -139,7 +126,7 @@ dependencies = [
 [[package]]
 name = "azure_core_macros"
 version = "0.2.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -151,7 +138,7 @@ dependencies = [
 [[package]]
 name = "azure_identity"
 version = "0.28.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "async-lock",
  "async-trait",
@@ -167,7 +154,7 @@ dependencies = [
 [[package]]
 name = "azure_security_keyvault_secrets"
 version = "0.7.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "async-trait",
  "azure_core",
@@ -203,9 +190,9 @@ checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
 name = "bitflags"
-version = "2.9.2"
+version = "2.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a65b545ab31d687cff52899d4890855fec459eb6afe0da6417b8a18da87aa29"
+checksum = "34efbcccd345379ca2868b2b2c9d3782e9cc58ba87bc7d79d5b53d9c9ae6f25d"
 
 [[package]]
 name = "bumpalo"
@@ -221,9 +208,9 @@ checksum = "d71b6127be86fdcfddb610f7182ac57211d4b18a3e9c82eb2d17662f2227ad6a"
 
 [[package]]
 name = "cc"
-version = "1.2.33"
+version = "1.2.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ee0f8803222ba5a7e2777dd72ca451868909b1ac410621b676adf07280e9b5f"
+checksum = "42bc4aea80032b7bf409b0bc7ccad88853858911b7713a8062fdc0623867bedc"
 dependencies = [
  "shlex",
 ]
@@ -304,15 +291,6 @@ name = "core-foundation-sys"
 version = "0.8.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
-
-[[package]]
-name = "crc32fast"
-version = "1.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511"
-dependencies = [
- "cfg-if",
-]
 
 [[package]]
 name = "crossbeam-utils"
@@ -400,16 +378,6 @@ name = "fastrand"
 version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "37909eebbb50d72f9059c3b6d82c0463f2ff062c9e95845c43a6c9c0355411be"
-
-[[package]]
-name = "flate2"
-version = "1.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a3d7db9596fecd151c5f638c0ee5d5bd487b6e0ea232e5dc96d5250f6f94b1d"
-dependencies = [
- "crc32fast",
- "miniz_oxide",
-]
 
 [[package]]
 name = "fnv"
@@ -764,9 +732,9 @@ dependencies = [
 
 [[package]]
 name = "io-uring"
-version = "0.7.9"
+version = "0.7.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d93587f37623a1a17d94ef2bc9ada592f5465fe7732084ab7beefabe5c77c0c4"
+checksum = "046fa2d4d00aea763528b4950358d0ead425372445dc8ff86312b3c69ff7727b"
 dependencies = [
  "bitflags",
  "cfg-if",
@@ -1166,7 +1134,6 @@ version = "0.12.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d429f34c8092b2d42c7c93cec323bb4adeb7c67698f70839adec842ec10c7ceb"
 dependencies = [
- "async-compression",
  "base64",
  "bytes",
  "futures-core",
@@ -1668,7 +1635,7 @@ checksum = "e421abadd41a4225275504ea4d6566923418b7f05506fbc9c0fe86ba7396114b"
 [[package]]
 name = "typespec"
 version = "0.8.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "base64",
  "serde",
@@ -1679,7 +1646,7 @@ dependencies = [
 [[package]]
 name = "typespec_client_core"
 version = "0.7.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "async-trait",
  "base64",
@@ -1704,7 +1671,7 @@ dependencies = [
 [[package]]
 name = "typespec_macros"
 version = "0.7.0"
-source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#8c5a4a2e6c3925fb2b1ed7bf5c04ac9aefb808fb"
+source = "git+https://github.com/heaths/azure-sdk-for-rust?branch=issue2750#fbbaa16c0ae58c8528dc20d844a7660f625f4e21"
 dependencies = [
  "proc-macro2",
  "quote",

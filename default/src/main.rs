@@ -1,11 +1,10 @@
 // Copyright 2025 Heath Stewart.
 // Licensed under the MIT License. See LICENSE.txt in the project root for license information.
 
-use std::env;
-
 use azure_identity::AzureDeveloperCliCredential;
 use azure_security_keyvault_secrets::SecretClient;
 use setup::setup;
+use std::env;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
