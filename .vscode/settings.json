@@ -6,6 +6,7 @@
     "default/Cargo.toml",
     "reqwest-no-gzip/Cargo.toml",
     "reqwest-rustls/Cargo.toml",
+    "reqwest-rustls-webpki/Cargo.toml",
     "setup/Cargo.toml",
   ],
   "[rust]": {
