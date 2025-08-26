@@ -1,0 +1,23 @@
+// Copyright 2025 Heath Stewart.
+// Licensed under the MIT License. See LICENSE.txt in the project root for license information.
+
+use azure_identity::AzureDeveloperCliCredential;
+use azure_security_keyvault_secrets::SecretClient;
+use setup::setup;
+use std::env;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    setup()?;
+
+    let credential = AzureDeveloperCliCredential::new(None)?;
+    let client = SecretClient::new(&env::var("AZURE_KEYVAULT_URL")?, credential, None)?;
+    let secret = client
+        .get_secret("my-secret", "", None)
+        .await?
+        .into_body()
+        .await?;
+    println!("{}", secret.value.unwrap_or_default());
+
+    Ok(())
+}
