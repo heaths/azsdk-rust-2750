@@ -611,3 +611,38 @@ name = "windows_x86_64_msvc"
 version = "0.53.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "271414315aff87387382ec3d271b52d7ae78726f5d44ac98b4f4030c91880486"
+
+[[patch.unused]]
+name = "azure_core"
+version = "0.28.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"
+
+[[patch.unused]]
+name = "azure_core_macros"
+version = "0.2.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"
+
+[[patch.unused]]
+name = "azure_identity"
+version = "0.28.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"
+
+[[patch.unused]]
+name = "azure_security_keyvault_secrets"
+version = "0.7.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"
+
+[[patch.unused]]
+name = "typespec"
+version = "0.8.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"
+
+[[patch.unused]]
+name = "typespec_client_core"
+version = "0.7.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"
+
+[[patch.unused]]
+name = "typespec_macros"
+version = "0.7.0"
+source = "git+https://github.com/heaths/azure-sdk-for-rust#3be1c27dbe61a42cfeae9ec9ef7df215838aef7b"

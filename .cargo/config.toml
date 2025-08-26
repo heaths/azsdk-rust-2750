@@ -1,0 +1,8 @@
+[patch.crates-io]
+azure_core = { version = "0.28.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
+azure_core_macros = { version = "0.2.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
+azure_identity = { version = "0.28.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
+azure_security_keyvault_secrets = { version = "0.7.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
+typespec = { version = "0.8.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
+typespec_client_core = { version = "0.7.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
+typespec_macros = { version = "0.7.0", git = "https://github.com/heaths/azure-sdk-for-rust" }
